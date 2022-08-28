@@ -1,0 +1,23 @@
+syntax = "proto3";
+package lua;
+
+option go_package = "/proto";
+option php_namespace = "blackjack200\\lua";
+
+message EvaluateRequest{
+  string code = 1;
+  map<string, string> variables = 2;
+  map<string, string> functions = 3;
+  string hostname = 4;
+}
+
+message EvaluateResponse {
+  string stdout = 1;
+  string stderr = 2;
+  string combineOut = 3;
+  optional string error = 4;
+}
+
+service Evaluator {
+  rpc Eval(EvaluateRequest) returns(EvaluateResponse);
+}

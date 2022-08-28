@@ -1,0 +1,21 @@
+syntax = "proto3";
+package lua;
+
+option go_package = "/proto";
+option php_namespace = "blackjack200\\lua";
+/*
+message CallFunctionRequest{
+  string function = 1;
+  repeated string param = 2;
+}
+
+message CallFunctionResponse{
+  string return = 1;
+  optional string error = 2;
+}
+
+service Function {
+  rpc Call(CallFunctionRequest) returns(CallFunctionResponse);
+}
+*/
+//TODO

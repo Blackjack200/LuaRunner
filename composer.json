@@ -1,0 +1,16 @@
+{
+    "name": "blackjack200/lua-runner",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "": [
+                "php_client/src/",
+                "php_client/proto_src/"
+            ]
+        }
+    },
+    "require": {
+        "grpc/grpc": "^1.42",
+        "google/protobuf": "^3.21"
+    }
+}
